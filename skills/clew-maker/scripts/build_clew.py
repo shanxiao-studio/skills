@@ -12,7 +12,7 @@
     images/         fetch_images.py 生成的头像（<名字>.png）和封面（_cover.png），可选
 
 输出 <工作目录>/<名称>.clew。每次生成 revision 加 1，线团导入时会认出这是同一份关系图的新版本。
-格式见 https://shanxiao.app/clew/skill.md 里的说明，或本 skill 的 references/format.md。
+格式见本 skill 的 references/format.md。
 """
 
 import io

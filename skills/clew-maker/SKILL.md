@@ -2,7 +2,7 @@
 name: clew-maker
 slug: clew-maker
 displayName: 线团人物关系图制作
-version: 1.1.0
+version: 1.1.1
 summary: 为线团 App 制作可导入的人物关系图
 license: Proprietary
 description: 为「线团 Clew」App 制作人物关系图：按真实的书、剧集、电影、动画、历史或用户给的文本查资料，整理人物和关系，找剧照或插画做头像，生成能直接导入线团的 .clew 文件。用户提到线团、线团技能、Clew、.clew，或者想要某部作品（红楼梦、权力的游戏、某部剧、某本小说）的人物关系图、人物关系网、角色关系导入手机时，都应该使用本技能，即使没有说「clew」。Makes character-relationship maps for the Clew iOS app from real books, TV series, films or user-supplied text, with portrait avatars, as an importable .clew file — use whenever someone mentions the Clew skill or wants a "who's who" / character map of a work for Clew.
@@ -14,11 +14,11 @@ description: 为「线团 Clew」App 制作人物关系图：按真实的书、�
 
 用户要的是「看剧看书时随手查谁是谁」，所以**准确比多**重要：一根编出来的关系会让用户误解剧情，比少一根更糟。
 
-本技能版本：**1.1.0**。
+本技能版本：**1.1.1**。
 
 ## 0. 开始之前
 
-1. **检查更新（能联网时）**：读 `https://shanxiao.app/clew/skill.md`，里面写着最新版本号。比本技能新就告诉用户一句「线团的制作技能有新版本，可以把那个地址再发给我重新安装」，然后照常继续。读不到就跳过，不用提。
+1. **检查更新（能联网时）**：读 `https://raw.githubusercontent.com/shanxiao-studio/skills/main/skills/clew-maker/SKILL.md` 的 `version`。比本技能新就告诉用户「线团制作技能有新版本，请从原安装渠道更新」，然后照常继续。读不到就跳过，不用提。
 2. **准备环境**：运行 `python3 scripts/setup.py`（Windows 上用 `py` 或 `python`）。它在 `~/.clew-maker/venv` 装好图片处理需要的库，最后一行打印一个 Python 路径——后面的脚本**都用这个 Python 运行**，下文写作 `<python>`。
    - 装不上时把错误原因告诉用户。国内网络可以按脚本提示换清华镜像。
    - 如果你所在的环境根本跑不了 Python 或不能读写文件，直接告诉用户：这个智能体做不出 .clew 文件，请换一个能在电脑上运行命令的智能体（如 Claude、Codex、WorkBuddy 的桌面版）。不要假装生成。
